@@ -1,9 +1,18 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
 import IconHome from './components/icons/IconHome.vue'
 import IconAbout from './components/icons/IconAbout.vue'
 import IconProjects from './components/icons/IconProjects.vue'
+import { useCounterStore } from './stores/counter'
+import { onMounted } from 'vue'
+const counter = useCounterStore()
+
+onMounted(() => {
+  counter.startTime()
+  setInterval(() => {
+    counter.startTime()
+  }, 1000)
+})
 </script>
 
 <template>
@@ -20,6 +29,7 @@ import IconProjects from './components/icons/IconProjects.vue'
   <footer>
     <div class="footer-text">
       <p>© {{ new Date().getFullYear() }} / Made with ❤️ by Eric Alex.</p>
+      ({{ counter.time }})
     </div>
     <div class="footer-icons">
       <a href="mailto:contatoerickalexsandro@gmail.com" target="_blank" rel="noopener"

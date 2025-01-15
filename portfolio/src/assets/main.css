@@ -121,6 +121,7 @@ a,
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
+  width: 60%;
 }
 
 .experience-time,
@@ -179,5 +180,88 @@ a:hover {
   body {
     display: flex;
     place-items: center;
+  }
+}
+
+@media (max-width: 1350px) {
+  .screen {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 4rem;
+  }
+
+  .about-me {
+    width: 100%;
+  }
+
+  .skills ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .studies-title h2,
+  .experience-title h2 {
+    font-size: 1.1rem;
+  }
+
+  .experience-time,
+  .studies-time {
+    font-size: 1rem;
+  }
+
+  footer {
+    padding: 3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .studies-header,
+  .experience-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .experience-time {
+    top: -1rem;
+    position: relative;
+  }
+
+  .studies-title,
+  .experience-title {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .screen {
+    padding: 3rem;
+  }
+
+  .greetings {
+    position: relative;
+    top: 2rem;
+    width: 90% !important;
+  }
+
+  .greetings h2 {
+    font-size: 1.5rem !important;
+  }
+
+  .name {
+    font-size: 2rem !important;
+  }
+
+  .greetings h3 {
+    font-size: 1rem !important;
+  }
+
+  footer {
+    flex-direction: column;
   }
 }

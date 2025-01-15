@@ -1,7 +1,7 @@
 <script setup>
-import WelcomeItem from './WelcomeItem.vue'
+import ProjectsItem from './ProjectsItem.vue'
 import IconAlarm from './icons/IconAlarm.vue'
-import GameIcon from './icons/GameIcon.vue'
+import IconGame from './icons/IconGame.vue'
 import IconDiscord from './icons/IconDiscord.vue'
 </script>
 
@@ -28,7 +28,7 @@ import IconDiscord from './icons/IconDiscord.vue'
       </div>
     </div>
     <div class="welcome">
-      <WelcomeItem>
+      <ProjectsItem>
         <template #icon>
           <IconAlarm />
         </template>
@@ -42,9 +42,9 @@ import IconDiscord from './icons/IconDiscord.vue'
             View the Github repository >
           </a>
         </div>
-      </WelcomeItem>
+      </ProjectsItem>
 
-      <WelcomeItem>
+      <ProjectsItem>
         <template #icon>
           <IconDiscord />
         </template>
@@ -56,11 +56,11 @@ import IconDiscord from './icons/IconDiscord.vue'
             View the Github repository >
           </a>
         </div>
-      </WelcomeItem>
+      </ProjectsItem>
 
-      <WelcomeItem>
+      <ProjectsItem>
         <template #icon>
-          <GameIcon />
+          <IconGame />
         </template>
         <template #heading>SnakeGame in C#</template>
         <div class="desc">
@@ -71,7 +71,7 @@ import IconDiscord from './icons/IconDiscord.vue'
             View the Github repository >
           </a>
         </div>
-      </WelcomeItem>
+      </ProjectsItem>
     </div>
   </div>
 </template>
@@ -103,5 +103,11 @@ h3 {
 
 .icons a {
   color: white;
+}
+
+@media (max-width: 1350px) {
+  .screen {
+    margin-top: 10%;
+  }
 }
 </style>

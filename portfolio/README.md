@@ -1,54 +1,66 @@
-# portfolio
+# Personal Portfolio
 
-This template should help get you started developing with Vue 3 in Vite.
+Welcome to my personal portfolio repository! This project showcases my skills, projects, and professional experience.
 
-## Recommended IDE Setup
+## 🚀 Features
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- Responsive design
+- Project showcase
+- Skills section
+- Contact information
+- Professional experience
+- Education background
 
-## Customize configuration
+## 💻 Technologies
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+- HTML5
+- CSS3
+- JavaScript
+- Vue.js
 
-## Project Setup
+## 🛠️ Installation
 
-```sh
+1. Clone the repository:
+
+```bash
+git clone https://github.com/erick-alexsandro/portfolio.git
+```
+
+2. Navigate to project directory:
+
+```bash
+cd portfolio
+```
+
+3. Install dependencies:
+
+```bash
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+4. Start the development server:
 
-```sh
+```bash
 npm run dev
 ```
 
-### Compile and Minify for Production
+## 📁 Project Structure
 
-```sh
-npm run build
+```bash
+portfolio/
+├── src/
+│   ├── components/
+│   ├── assets/
+│   ├── styles/
+│   └── pages/
+├── public/
+└── README.md
 ```
 
-### Run End-to-End Tests with [Playwright](https://playwright.dev)
+## 🤝 Contributing
 
-```sh
-# Install browsers for the first run
-npx playwright install
+This is an open source project! Feel free to use the code the way you want to.
 
-# When testing on CI, must build the project first
-npm run build
+## 📞 Contact
 
-# Runs the end-to-end tests
-npm run test:e2e
-# Runs the tests only on Chromium
-npm run test:e2e -- --project=chromium
-# Runs the tests of a specific file
-npm run test:e2e -- tests/example.spec.ts
-# Runs the tests in debug mode
-npm run test:e2e -- --debug
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+My Gmail - [contatoerickalexsandro@gmailcom](mailto:contatoerickalexsandro@gmail.com)
