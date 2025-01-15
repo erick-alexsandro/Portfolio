@@ -52,7 +52,7 @@ portfolio/
 │   ├── components/
 │   ├── assets/
 │   ├── router/
-|   ├── views/
+│   ├── views/
 │   └── stores/
 └── README.md
 ```
