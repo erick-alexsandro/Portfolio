@@ -1,17 +1,24 @@
-<script>
-</script>
+<script></script>
 
 <template>
   <div class="greetings">
-    <h2 class="green">hey! i'm <bold class="name green">Eric Alex</bold>👋</h2>
+    <h2 class="white name">
+      Hey! I'm <bold style="text-decoration: underline" class="name">Eric Alex</bold>👋
+    </h2>
     <h3>
-      i’m a brazilian developer with skills ranging from building beautiful websites
-      to creating desktop applications.
+      A Brazilian developer with skills ranging from building beautiful websites to creating desktop
+      applications.
     </h3>
     <div class="icons">
-      <a href="https://github.com/erick-alexsandro" target="_blank" rel="noopener"><font-awesome-icon icon="fa-solid fa-square-envelope" /></a>
-      <a href="https://github.com/erick-alexsandro" target="_blank" rel="noopener"><font-awesome-icon icon="fa-brands fa-square-github" /></a>
-      <a href="https://www.linkedin.com/in/erick-alexsandro/" target="_blank" rel="noopener"><font-awesome-icon icon="fa-brands fa-linkedin" /></a>
+      <a href="mailto:contatoerickalexsandro@gmail.com" target="_blank" rel="noopener"
+        ><font-awesome-icon icon="fa-solid fa-square-envelope"
+      /></a>
+      <a href="https://github.com/erick-alexsandro" target="_blank" rel="noopener"
+        ><font-awesome-icon icon="fa-brands fa-square-github"
+      /></a>
+      <a href="https://www.linkedin.com/in/erick-alexsandro/" target="_blank" rel="noopener"
+        ><font-awesome-icon icon="fa-brands fa-linkedin"
+      /></a>
     </div>
   </div>
 </template>
@@ -26,7 +33,6 @@ h2 {
 
 .name {
   font-weight: 700;
-  text-decoration: underline;
 }
 
 h3 {
@@ -37,6 +43,10 @@ h3 {
   display: flex;
   gap: 2px;
   font-size: 2rem;
+}
+
+.icons a {
+  color: white;
 }
 
 @media (min-width: 1024px) {
