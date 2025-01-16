@@ -32,9 +32,6 @@
 </template>
 
 <style scoped>
-.screen {
-  margin-top: 10%;
-}
 .greetings {
   width: 100%;
 }

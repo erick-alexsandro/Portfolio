@@ -129,9 +129,6 @@
 </template>
 
 <style scoped>
-.screen {
-  margin-top: 10%;
-}
 h3 {
   font-size: 1.2rem;
 }

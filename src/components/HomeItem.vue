@@ -72,9 +72,6 @@ import IconDiscord from './icons/IconDiscord.vue'
 </template>
 
 <style scoped>
-.screen {
-  margin-top: 2%;
-}
 .greetings {
   width: 100%;
 }
@@ -98,11 +95,5 @@ h3 {
 
 .icons a {
   color: white;
-}
-
-@media (max-width: 1350px) {
-  .screen {
-    margin-top: 10%;
-  }
 }
 </style>

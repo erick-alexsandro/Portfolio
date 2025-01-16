@@ -6,16 +6,21 @@ import IconProjects from './components/icons/IconProjects.vue'
 import IconTranslate from './components/icons/IconTranslate.vue'
 import IconSelectedV from './components/icons/IconSelectedV.vue'
 import { useCounterStore } from './stores/counter'
-import { onMounted } from 'vue'
+import { onMounted, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { watch } from 'vue'
 const { locale } = useI18n()
 
 const counter = useCounterStore()
 
-import { ref } from 'vue'
-
 const isToggled = ref(false)
+
+const backToTop = () => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+  })
+}
 
 const toggleDropdown = () => {
   const dropdown = document.querySelector('.dropdown')
@@ -46,13 +51,12 @@ const selectLanguage = (language) => {
   localStorage.setItem('preferredLanguage', language)
 }
 
-// Update the watch handler too
 watch(selectedLanguage, (language) => {
   const localeMap = {
     Português: 'pt',
     English: 'en',
   }
-  locale.value = localeMap[language] // Use locale.value directly
+  locale.value = localeMap[language]
 })
 
 onMounted(() => {
@@ -71,13 +75,16 @@ onMounted(() => {
 <template>
   <header>
     <nav>
-      <RouterLink to="/" data-i18n="nav.home"><IconHome />{{ $t('nav.home') }}</RouterLink>
-      <RouterLink to="/about" data-i18n="nav.about"><IconAbout />{{ $t('nav.about') }}</RouterLink>
-      <RouterLink to="/portfolio" data-i18n="nav.portfolio"
+      <RouterLink @click="backToTop" to="/" data-i18n="nav.home"
+        ><IconHome />{{ $t('nav.home') }}</RouterLink
+      >
+      <RouterLink @click="backToTop" to="/about" data-i18n="nav.about"
+        ><IconAbout />{{ $t('nav.about') }}</RouterLink
+      >
+      <RouterLink @click="backToTop" to="/portfolio" data-i18n="nav.portfolio"
         ><IconProjects />{{ $t('nav.portfolio') }}</RouterLink
       >
     </nav>
-    <div class="wrapper"></div>
   </header>
 
   <RouterView />
@@ -121,13 +128,18 @@ header {
   line-height: 1.5;
   max-height: 100vh;
   position: sticky;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
   display: flex;
+  padding: 2rem;
 }
 
 nav {
   font-size: 12px;
   text-align: center;
-  position: fixed;
+  position: sticky;
   top: 2rem;
   left: 2rem;
   z-index: 1000;
@@ -136,6 +148,8 @@ nav {
   border: 1px solid var(--color-border);
   border-radius: 2rem;
   padding: 0.5rem 0.5rem;
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.5rem) brightness(0.95);
 }
 
 nav a.router-link-exact-active {
