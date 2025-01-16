@@ -51,9 +51,9 @@ portfolio/
 ├── src/
 │   ├── components/
 │   ├── assets/
-│   ├── router/
-│   ├── views/
-│   └── stores/
+│   ├── styles/
+│   └── pages/
+├── public/
 └── README.md
 ```
 

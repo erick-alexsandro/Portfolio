@@ -8,7 +8,7 @@
           <img class="screenshot-work" src="../assets/pomodoroapp.png" alt="Pomodoro App" />
         </div>
         <div class="work-details">
-          <h1 class="title">Pomodoro App</h1>
+          <h1 class="title">PomodoroApp</h1>
         </div>
       </div>
       <div class="work work-2">
@@ -16,7 +16,7 @@
           <img class="screenshot-work" src="../assets/snakegame.png" alt="Snake Game" />
         </div>
         <div class="work-details">
-          <h1 class="title">Snake Game in C#</h1>
+          <h1 class="title">{{ $t('portfolioPage.snakeGame') }}</h1>
         </div>
       </div>
       <div class="work work-3">
@@ -32,9 +32,6 @@
 </template>
 
 <style scoped>
-.screen {
-  margin-top: 10%;
-}
 .greetings {
   width: 100%;
 }

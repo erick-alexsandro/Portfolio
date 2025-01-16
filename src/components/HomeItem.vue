@@ -9,11 +9,11 @@ import IconDiscord from './icons/IconDiscord.vue'
   <div class="screen">
     <div class="greetings">
       <h2 class="white name">
-        Hey! I'm <bold style="text-decoration: underline" class="name">Eric Alex</bold>👋
+        {{ $t('greetings.hello')
+        }}<bold style="text-decoration: underline" class="name">Eric Alex</bold>👋
       </h2>
       <h3>
-        A Brazilian developer with skills ranging from building beautiful websites to creating
-        desktop applications.
+        {{ $t('greetings.about') }}
       </h3>
       <div class="icons">
         <a href="mailto:contatoerickalexsandro@gmail.com" target="_blank" rel="noopener"
@@ -35,11 +35,9 @@ import IconDiscord from './icons/IconDiscord.vue'
         <template #heading>PomodoroApp</template>
 
         <div class="desc">
-          PomodoroApp is an application that helps users manage their tasks and study sessions using
-          the Pomodoro technique. It includes functionalities for creating, editing and completing
-          tasks, as well as controlling work time and breaks.
+          {{ $t('homePortfolio.work1.description') }}
           <a href="https://github.com/erick-alexsandro/PomodoroApp" target="_blank">
-            View the Github repository >
+            {{ $t('homePortfolio.link') }}
           </a>
         </div>
       </ProjectsItem>
@@ -50,10 +48,9 @@ import IconDiscord from './icons/IconDiscord.vue'
         </template>
         <template #heading>ChatGotch</template>
         <div class="desc">
-          ChatGotch is a Discord bot that allows users to create, edit, and delete their own pets.
-          These pets can fight other pets, ask for food, and, if not fed, will eventually die.
+          {{ $t('homePortfolio.work2.description') }}
           <a href="https://github.com/erick-alexsandro/ChatGotch" target="_blank">
-            View the Github repository >
+            {{ $t('homePortfolio.link') }}
           </a>
         </div>
       </ProjectsItem>
@@ -62,13 +59,11 @@ import IconDiscord from './icons/IconDiscord.vue'
         <template #icon>
           <IconGame />
         </template>
-        <template #heading>SnakeGame in C#</template>
+        <template #heading>{{ $t('portfolioPage.snakeGame') }}</template>
         <div class="desc">
-          This project contains a C# implementation of the classic Snake game, developed following
-          the instructional video by OttoBotCode. It has a fully functional Snake game without the
-          use of any game engine, utilizing WPF for the user interface.
+          {{ $t('homePortfolio.work3.description') }}
           <a href="https://github.com/erick-alexsandro/CSharp-Snake-Game" target="_blank">
-            View the Github repository >
+            {{ $t('homePortfolio.link') }}
           </a>
         </div>
       </ProjectsItem>
@@ -77,9 +72,6 @@ import IconDiscord from './icons/IconDiscord.vue'
 </template>
 
 <style scoped>
-.screen {
-  margin-top: 2%;
-}
 .greetings {
   width: 100%;
 }
@@ -103,11 +95,5 @@ h3 {
 
 .icons a {
   color: white;
-}
-
-@media (max-width: 1350px) {
-  .screen {
-    margin-top: 10%;
-  }
 }
 </style>
