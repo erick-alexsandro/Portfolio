@@ -10,7 +10,7 @@
           </div>
           <div class="header-text">
             <h1 class="name title">Eric Alex</h1>
-            <h2 class="subtitle">FullStack Developer</h2>
+            <h2 class="subtitle">{{ $t('aboutPage.heading.profession') }}</h2>
             <div class="icons">
               <a href="mailto:contatoerickalexsandro@gmail.com" target="_blank" rel="noopener"
                 ><font-awesome-icon icon="fa-solid fa-square-envelope"
@@ -24,12 +24,7 @@
             </div>
             <div class="description">
               <p>
-                Passionate about technology, with a solid technical and academic background in
-                Computer Science and related fields. Hands-on experience as a FullStack Developer,
-                working on system development using technologies such as ASP.NET, C#, JavaScript,
-                Vue.js, PostgreSQL, and MongoDB. Fluent in English, capable of contributing to
-                global projects. Committed and adaptable to working in dynamic and challenging
-                environments, always striving for continuous improvement and excellence in results.
+                {{ $t('aboutPage.heading.details') }}
               </p>
             </div>
           </div>
@@ -37,9 +32,9 @@
       </div>
       <div class="about-body">
         <div class="skills">
-          <h1 style="font-size: 3rem" class="title">Skills</h1>
+          <h1 style="font-size: 3rem" class="title">{{ $t('aboutPage.skills.title') }}</h1>
           <ul>
-            <li>Web Development</li>
+            <li>{{ $t('aboutPage.skills.skillDev') }}</li>
             <li>C#</li>
             <li>JavaScript</li>
             <li>Java</li>
@@ -51,70 +46,65 @@
             <li>SQL</li>
             <li>MongoDB</li>
             <li>Git</li>
-            <li>English</li>
-            <li>Portuguese</li>
+            <li>{{ $t('aboutPage.skills.skillEnglish') }}</li>
+            <li>{{ $t('aboutPage.skills.skillPt') }}</li>
           </ul>
         </div>
         <div class="experience">
-          <h1 style="font-size: 3rem" class="title">Experience</h1>
+          <h1 style="font-size: 3rem" class="title">{{ $t('aboutPage.experience.title') }}</h1>
           <ul>
             <li>
               <div class="experience-header">
                 <div class="experience-title">
                   <h2 class="title">Trival</h2>
-                  <h3 class="subtitle">FullStack Developer</h3>
+                  <h3 class="subtitle">{{ $t('aboutPage.experience.ex1.title') }}</h3>
                 </div>
                 <div class="experience-time">
-                  <p>Dec/2023 - Dec/2024</p>
+                  <p>{{ $t('aboutPage.experience.ex1.time') }}</p>
                 </div>
               </div>
               <p>
-                At Trival, I was responsible for opening calls for clients and developing fullstack
-                systems, using technologies such as ASP.NET, C#, MongoDB, PostgreSQL, JavaScript,
-                Vue and Vuetify.At Trival, I was responsible for opening calls for clients and
-                developing fullstack systems, using technologies such as ASP.NET, C#, MongoDB,
-                PostgreSQL, JavaScript, Vue and Vuetify.
+                {{ $t('aboutPage.experience.ex1.description') }}
               </p>
             </li>
             <li>
               <div class="experience-header">
                 <div class="experience-title">
                   <h2 class="title">Escola Estadual Padre João de Mattos</h2>
-                  <h3 class="subtitle">Assembling Computer Networks</h3>
+                  <h3 class="subtitle">{{ $t('aboutPage.experience.ex2.title') }}</h3>
                 </div>
                 <div class="experience-time">
-                  <p>Aug/2022 - Dec/2022</p>
+                  <p>{{ $t('aboutPage.experience.ex2.time') }}</p>
                 </div>
               </div>
               <p>
-                Under the instruction of Elson Gomes Santana, I assisted in assembling the computer
-                network in the school's computer room.
+                {{ $t('aboutPage.experience.ex2.description') }}
               </p>
             </li>
           </ul>
         </div>
         <div class="studies">
-          <h1 style="font-size: 3rem" class="title">Studies</h1>
+          <h1 style="font-size: 3rem" class="title">{{ $t('aboutPage.studies.title') }}</h1>
           <ul>
             <li>
               <div class="studies-header">
                 <div class="studies-title">
-                  <h2 class="title">Bachelor's degree - Computer Science</h2>
+                  <h2 class="title">{{ $t('aboutPage.studies.std1.title') }}</h2>
                   <h3 class="subtitle">Centro Universitário Una</h3>
                 </div>
                 <div class="studies-time">
-                  <p>Aug/2023 - Aug/2027</p>
+                  <p>{{ $t('aboutPage.studies.std1.time') }}</p>
                 </div>
               </div>
             </li>
             <li>
               <div class="studies-header">
                 <div class="studies-title">
-                  <h2 class="title">Technical Education - Internet Computing</h2>
+                  <h2 class="title">{{ $t('aboutPage.studies.std2.title') }}</h2>
                   <h3 class="subtitle">Escola Estadual Padre João de Mattos Almeida</h3>
                 </div>
                 <div class="studies-time">
-                  <p>Aug/2021 - Dec/2022</p>
+                  <p>{{ $t('aboutPage.studies.std2.time') }}</p>
                 </div>
               </div>
             </li>
@@ -122,8 +112,7 @@
               <div class="studies-header">
                 <div class="studies-title">
                   <h2 class="title">
-                    Technical Education - Assembly and Configuration of Windows Computers and
-                    Networks
+                    {{ $t('aboutPage.studies.std3.title') }}
                   </h2>
                   <h3 class="subtitle">Escola Estadual Padre João de Mattos Almeida</h3>
                 </div>
