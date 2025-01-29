@@ -1,7 +1,7 @@
 <script setup>
 import ProjectsItem from './ProjectsItem.vue'
 import IconAlarm from './icons/IconAlarm.vue'
-import IconGame from './icons/IconGame.vue'
+import IconMusic from './icons/IconMusic.vue'
 import IconDiscord from './icons/IconDiscord.vue'
 </script>
 
@@ -30,6 +30,20 @@ import IconDiscord from './icons/IconDiscord.vue'
     <div class="welcome">
       <ProjectsItem>
         <template #icon>
+          <IconMusic />
+        </template>
+        <template #heading>Similartists</template>
+        <div class="desc">
+          A web application that helps you discover new artists similar to your favorites using the
+          Last.fm API and Spotify API.
+          <a href="https://github.com/erick-alexsandro/Similartists" target="_blank">
+            {{ $t('homePortfolio.link') }}
+          </a>
+        </div>
+      </ProjectsItem>
+
+      <ProjectsItem>
+        <template #icon>
           <IconAlarm />
         </template>
         <template #heading>PomodoroApp</template>
@@ -50,19 +64,6 @@ import IconDiscord from './icons/IconDiscord.vue'
         <div class="desc">
           {{ $t('homePortfolio.work2.description') }}
           <a href="https://github.com/erick-alexsandro/ChatGotch" target="_blank">
-            {{ $t('homePortfolio.link') }}
-          </a>
-        </div>
-      </ProjectsItem>
-
-      <ProjectsItem>
-        <template #icon>
-          <IconGame />
-        </template>
-        <template #heading>{{ $t('portfolioPage.snakeGame') }}</template>
-        <div class="desc">
-          {{ $t('homePortfolio.work3.description') }}
-          <a href="https://github.com/erick-alexsandro/CSharp-Snake-Game" target="_blank">
             {{ $t('homePortfolio.link') }}
           </a>
         </div>

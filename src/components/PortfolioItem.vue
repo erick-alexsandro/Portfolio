@@ -3,6 +3,20 @@
 <template>
   <div class="screen">
     <div class="list-of-works">
+      <div class="work work-0">
+        <div class="work-image">
+          <video
+            class="screenshot-work"
+            src="../assets/similartists.mp4"
+            autoplay
+            loop
+            muted
+          ></video>
+        </div>
+        <div class="work-details">
+          <h1 class="title">Similartists</h1>
+        </div>
+      </div>
       <div class="work work-1">
         <div class="work-image">
           <img class="screenshot-work" src="../assets/pomodoroapp.png" alt="Pomodoro App" />
