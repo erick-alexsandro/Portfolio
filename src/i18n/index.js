@@ -17,6 +17,10 @@ const messages = {
     },
     homePortfolio: {
       link: 'Veja o repositório no Github >',
+      work0: {
+        description:
+          'Uma aplicação web que ajuda você a descobrir novos artistas similares aos seus favoritos usando a API do Last.fm e a API do Spotify.',
+      },
       work1: {
         description:
           'O PomodoroApp é um aplicativo que ajuda os usuários a gerenciar suas tarefas e sessões de estudo usando a técnica Pomodoro. Ele inclui funcionalidades para criar, editar e concluir tarefas, além de controlar o tempo de trabalho e os intervalos. ',
@@ -92,6 +96,10 @@ const messages = {
     },
     homePortfolio: {
       link: 'View the Github repository >',
+      work0: {
+        description:
+          'A web application that helps you discover new artists similar to your favorites using the Last.fm API and Spotify API.',
+      },
       work1: {
         description:
           'PomodoroApp is an application that helps users manage their tasks and study sessions using the Pomodoro technique. It includes functionalities for creating, editing and completing tasks, as well as controlling work time and breaks. ',

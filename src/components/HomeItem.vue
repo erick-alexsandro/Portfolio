@@ -34,8 +34,7 @@ import IconDiscord from './icons/IconDiscord.vue'
         </template>
         <template #heading>Similartists</template>
         <div class="desc">
-          A web application that helps you discover new artists similar to your favorites using the
-          Last.fm API and Spotify API.
+          {{ $t('homePortfolio.work0.description') }}
           <a href="https://github.com/erick-alexsandro/Similartists" target="_blank">
             {{ $t('homePortfolio.link') }}
           </a>
